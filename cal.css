@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(203, 197, 188);
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 300px;
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 2rem;
+}
+
+.display {
+  padding: 1.5rem 0.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background-color: rgb(234, 233, 233);
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.keys > button:first-child {
+  background-color: crimson;
+  color: aliceblue;
+}
+
+.all_delete > button:last-child {
+  background-color: rgb(42, 182, 228);
+  color: aliceblue;
+}
+
+button {
+  height: 2.2rem;
+  width: 3.5rem;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.keys > button:not(:first-child, :nth-child(4), :last-child):hover {
+  background-color: rgb(171, 171, 221);
+  color: aliceblue;
+}
+
+.keys > button:last-child {
+  background-color: rgba(4, 180, 4, 0.875);
+  color: aliceblue;
+}
